@@ -36,3 +36,206 @@
     transform: rotate(360deg);
   }
 }
+.titleWhite{
+  color: white;
+  font-style: italic;
+}
+.titleBlack{
+  color: black;
+  font-style: italic;
+}
+.AddBtnBlack{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 37px;
+  margin: 0 3px;
+  font-style: italic;
+  outline: none;
+  width: 80px;
+  margin-left: -6px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.AddBtnLight{
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 37px;
+  margin: 0 3px;
+  font-style: italic;
+  outline: none;
+  width: 80px;
+  margin-left: -6px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.inPutWhite{
+  height: 35px;
+  padding: 1px 10px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 30%;
+  background-color: white;
+  color: black;
+  
+}
+.inputBlack{
+  height: 35px;
+  padding: 1px 10px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 30%;
+  color: white;
+  background-color: rgba(136, 133, 133, 0.479);
+}
+.inputBlack::placeholder{
+  color: white;
+}
+
+.firstContainer{
+  background-color: rgb(5, 166, 206);
+  /* background-color: black; */
+  padding: 30px;
+}
+.edit{
+  background-color: rgb(223, 139, 13);
+  /* background-color: black; */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0 4px;
+font-style: italic;
+font-weight: bold;
+font-size: 20px;
+padding-top: 5px;
+width: 35px;
+}
+.del{
+  font-size: 20px;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
+  margin: 0 4px;
+  color: white;
+  background-color:rgb(202, 9, 9);
+  border: none;
+  padding-top: 5px;
+  width: 35px;
+  font-weight: bold;
+}
+
+.todos{
+ 
+  font-style: italic;
+  font-size: 18px;
+  
+}
+.errorLine{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sepTodoWhite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 40%;
+  background-color: white;
+  color: black;
+  padding: 0 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  
+}
+
+.sepTodoBlack{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 40%;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  padding: 0 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.toDOContainer{
+  display: flex;
+  justify-content: center;
+}
+.title2{
+  color: white;
+  font-style: italic;
+}
+.NoList{
+  color: rgb(9, 74, 90);
+  /* color: gray; */
+  font-style: italic;
+}
+.WholeBody{
+  width: 100%;
+  min-height: 95vh;
+  
+}
+.ModeBtnWhte{
+  justify-self: flex-end;
+  border: none;
+  color: black;
+  margin-top:30px ;
+  margin-bottom:-30px ;
+   height: 30px;
+   background-color: white;
+   font-weight: bold;
+   font-style: italic;
+   width: 100px;
+   float: right;
+   margin-right: 20px;
+   display: block;
+   border-radius: 3px;
+}
+.ModeBtnBlck{
+  border-radius: 3px;
+  justify-self: flex-end;
+  font-style: italic;
+  border: none;
+  color: white;
+  margin-top:30px ;
+  margin-bottom:-30px ;
+   height: 30px;
+   background-color: black;
+   font-weight: bold;
+   width: 100px;
+   float: right;
+   margin-right: 20px;
+   display: block;
+}
+.dontShow{
+  display: none;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.footer p{
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
