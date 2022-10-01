@@ -227,7 +227,7 @@ width: 35px;
 }
 @media (max-width:576px){
 .inPutWhite,.inputBlack {
-  width: 70%;
+  width: 65%;
   height: 34px;
 }
 .sepTodoWhite,.sepTodoBlack{
