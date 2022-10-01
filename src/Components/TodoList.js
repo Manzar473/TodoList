@@ -149,35 +149,36 @@ function TodoList() {
                     <h1 className={isDarkModOn ? "titleWhite" : "titleBlack"}  >TODOs List</h1>
                     <input className={isDarkModOn ? "inputBlack" : "inPutWhite"} style={{ marginTop: "25px" }} type="text" value={inputValue} placeholder='Add a Task' onChange={ChangeInput}></input>
                     <button className={isDarkModOn ? "AddBtnBlack" : "AddBtnLight"} onClick={addTodos}>{btnText}</button>
-                    <p className='errorLine' style={{ color: "#b30000", fontWeight: "500" }}>{error}</p>
+                    <p className='errorLine' style={{ color: "#B30000", fontWeight: "500" }}>{error}</p>
                 </div>
                 <div className='items'>
-                    <h1 className={isDarkModOn ? "titleWhite" : "titleBlack"} >Tasks</h1>
+                    <h1 className={isDarkModOn ? "titleWhite taskHead" : "titleBlack taskHead"} >Tasks</h1>
                     <h3 style={isDarkModOn ? { color: "gray" } : { color: "rgb(9, 74, 90)" }} className='NoList'>{(todos.length === 0) ? "No List to Show" : ""}</h3>
-
                     {todos.map((todo, pos) => {
                         return (
                             <>
                                 <div className='toDOContainer'>
                                     <div className={isDarkModOn ? "sepTodoBlack" : "sepTodoWhite"}>
-                                        <h4 className='todos' style={pos === index ? todoRed : todoClr} >{todo}</h4>
-                                        <div>
+                                        <div className='taskTitle'>
+                                            <h4 className='todos' style={pos === index ? todoRed : todoClr} >{todo}</h4>
+                                        </div>
+                                        <div className='BtnDiv'>
                                             <button style={isDarkModOn ? { backgroundColor: "white", color: "black" } : { backgroundColor: "rgb(223, 139, 13)" }} className='edit' onClick={() => { editTask(pos) }}><ion-icon name="create"></ion-icon></button>
                                             <button className='del' onClick={() => { deleteTask(pos) }}><ion-icon name="trash"></ion-icon></button>
                                         </div>
                                     </div>
                                 </div>
-
                             </>
                         )
-
                     })}
-
                 </div>
             </div>
             <div className='footer'>
                 <p>Copyright ©2022, Manzar Abbas. All rights reserved.</p>
             </div>
+            {/* <div className='footer'>
+                <p>Copyright ©2022, Manzar Abbas. All rights reserved.</p>
+            </div> */}
         </>
 
     )

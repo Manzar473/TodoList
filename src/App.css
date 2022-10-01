@@ -1,20 +1,17 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
+  background-color: #282C34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,11 +20,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
-  color: #61dafb;
+  color: #61DAFB;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -84,7 +79,6 @@
   width: 30%;
   background-color: white;
   color: black;
-  
 }
 .inputBlack{
   height: 35px;
@@ -102,7 +96,6 @@
 .inputBlack::placeholder{
   color: white;
 }
-
 .firstContainer{
   background-color: rgb(5, 166, 206);
   /* background-color: black; */
@@ -134,12 +127,9 @@ width: 35px;
   width: 35px;
   font-weight: bold;
 }
-
 .todos{
- 
   font-style: italic;
   font-size: 18px;
-  
 }
 .errorLine{
   font-style: italic;
@@ -157,11 +147,8 @@ width: 35px;
   padding: 0 10px;
   border-radius: 4px;
   margin-bottom: 8px;
-  
 }
-
 .sepTodoBlack{
- 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,7 +176,6 @@ width: 35px;
 .WholeBody{
   width: 100%;
   min-height: 95vh;
-  
 }
 .ModeBtnWhte{
   justify-self: flex-end;
@@ -226,7 +212,6 @@ width: 35px;
 .dontShow{
   display: none;
 }
-
 .footer{
   background-color: black;
   color: white;
@@ -237,5 +222,34 @@ width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  margin: 0;
+  padding: 7px 0px;
+}
+@media (max-width:576px){
+.inPutWhite,.inputBlack {
+  width: 70%;
+  height: 34px;
+}
+.sepTodoWhite,.sepTodoBlack{
+  width: 85%;
+}
+.taskTitle{
+  display: flex;
+  width: 80%;
+  overflow-x: scroll;
+  justify-content: start;
+}
+.BtnDiv{
+  display: flex;
+}
+.titleWhite,.titleBlack{
+  margin-top: 54px;
+  margin-bottom: 0;
+}
+.taskHead{
+  margin: 0;
+}
+.firstContainer{
+  padding-bottom: 7px;
+}
 }
